@@ -10,7 +10,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 rootProject.name = "GCMS-ANDMIN"
 include ':app'
+include ':presentation'
+include ':domain'
+include ':data'
