@@ -19,6 +19,7 @@ object AndroidX {
     const val ACTIVITY = "androidx.activity:activity-ktx:1.3.1"
     const val FRAGMENT = "androidx.fragment:fragment-ktx:1.3.6"
     const val DATASTORE = "androidx.datastore:datastore-preferences:1.0.0"
+    const val RECYCLER = "androidx.recyclerview:recyclerview:1.1.0"
 }
 
 object KTX {
