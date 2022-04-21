@@ -15,23 +15,27 @@
         android:layout_height="match_parent"
         tools:context=".ui.main.MainActivity">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/edittext_username"/>
-
-        <EditText
-            android:hint="@string/put_name"
-            android:id="@+id/edittext_username"
-            android:layout_width="0dp"
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_view"
+            tools:listitem="@layout/item_layout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

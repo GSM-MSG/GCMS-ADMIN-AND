@@ -4,6 +4,9 @@
 
     <application>
         <activity
+            android:name=".ui.modify.ModifyActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.splash.SplashActivity"
             android:exported="false" />
         <activity
