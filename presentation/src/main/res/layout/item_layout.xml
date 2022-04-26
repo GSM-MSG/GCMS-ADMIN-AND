@@ -6,6 +6,7 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_layout"
         android:layout_width="match_parent"
         android:layout_height="50dp">
 
@@ -53,6 +54,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:id="@+id/modify_btn"
             android:textColor="@color/cardview_dark_background"
             android:textStyle="bold"
             android:textSize="20sp"
