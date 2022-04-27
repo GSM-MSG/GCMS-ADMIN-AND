@@ -14,7 +14,7 @@ class ViewHolder(private val binding: ItemLayoutBinding) : RecyclerView.ViewHold
             userNumber.text = data.student_ID
 
             modifyBtn.setOnClickListener {
-
+                Snackbar.make(it, "이름: ${data.name}", Snackbar.LENGTH_SHORT).show()
             }
         }
     }
