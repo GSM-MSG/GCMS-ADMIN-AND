@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:text="@string/name"
             android:textColor="@color/cardview_dark_background"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/guideline1"
             app:layout_constraintTop_toTopOf="parent" />
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:text="@string/user_num"
             android:textColor="@color/cardview_dark_background"
-            android:textSize="35sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/guideline2"
             app:layout_constraintTop_toTopOf="parent" />

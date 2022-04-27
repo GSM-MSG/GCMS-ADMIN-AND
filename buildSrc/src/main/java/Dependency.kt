@@ -20,6 +20,11 @@ object AndroidX {
     const val FRAGMENT = "androidx.fragment:fragment-ktx:1.3.6"
     const val DATASTORE = "androidx.datastore:datastore-preferences:1.0.0"
     const val RECYCLER = "androidx.recyclerview:recyclerview:1.1.0"
+
+    const val RXBINDING = "com.jakewharton.rxbinding4:rxbinding:4.0.0"
+    const val RXBINDING_CORE = "com.jakewharton.rxbinding4:rxbinding-core:4.0.0'"
+    const val RXBINDING_APPCOMPAT = "com.jakewharton.rxbinding4:rxbinding-appcompat:4.0.0"
+    const val RXBINDING_RECYCLERVIEW = "com.jakewharton.rxbinding4:rxbinding-recyclerview:4.0.0"
 }
 
 object KTX {

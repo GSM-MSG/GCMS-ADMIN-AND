@@ -4,11 +4,17 @@
 
     <application>
         <activity
-            android:name=".ui.modify.ModifyActivity"
+            android:name=".ui.club.ClubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.student.StudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.teacher.TeacherActivity"
             android:exported="false" />
         <activity
             android:name=".ui.splash.SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

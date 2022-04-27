@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
         <variable
-            name="activity"
-            type="com.example.presentation.ui.main.MainActivity" />
+            name="fragment"
+            type="com.example.presentation.ui.student.StudentShearchFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.main.MainActivity">
+        tools:context=".ui.student.StudentShearchFragment">
 
         <EditText
             android:id="@+id/edittext"
@@ -37,6 +36,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edittext"
             tools:listitem="@layout/item_layout" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
