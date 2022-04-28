@@ -6,19 +6,20 @@
     <data>
 
         <variable
-            name="activity"
-            type="com.example.presentation.ui.teacher.TeacherActivity" />
+            name="fragment"
+            type="com.example.presentation.ui.club.ClubSearchFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.teacher.TeacherActivity">
+        tools:context=".ui.club.ClubSearchFragment">
+
 
         <EditText
             android:id="@+id/edittext"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:hint="@string/input_search_word"
             android:iconifiedByDefault="false"
             android:paddingTop="5dp"
@@ -37,10 +38,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edittext"
-            tools:listitem="@layout/teacher_item_layout" />
+            tools:listitem="@layout/club_item_layout" />
 
         <Button
-            android:onClick="@{activity::goMain}"
             android:id="@+id/go_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

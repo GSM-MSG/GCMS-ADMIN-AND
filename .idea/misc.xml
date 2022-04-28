@@ -4,20 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/drawable/ic_exclude.xml" value="0.1125" />
-        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/activity_club.xml" value="0.24947916666666667" />
-        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/activity_club.xml" value="0.1" />
+        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/activity_main.xml" value="0.128" />
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/activity_modify.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/activity_splash.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/activity_student.xml" value="0.2" />
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/activity_teacher.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/club_item_layout.xml" value="0.152" />
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_club_modify.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_club_search.xml" value="0.144" />
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_club_student_add.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_club_student_manage.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_club_student_out.xml" value="0.23489583333333333" />
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_main.xml" value="0.2" />
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_modify.xml" value="0.24947916666666667" />
-        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_student_modify.xml" value="0.24947916666666667" />
-        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_student_shearch.xml" value="0.1" />
+        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_student_modify.xml" value="0.16" />
+        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/fragment_student_shearch.xml" value="0.176" />
         <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/item_layout.xml" value="0.2" />
+        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/student_item_layout.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/z0103/AndroidStudioProjects/GCMSANDMIN/presentation/src/main/res/layout/teacher_item_layout.xml" value="0.264" />
       </map>
     </option>
   </component>

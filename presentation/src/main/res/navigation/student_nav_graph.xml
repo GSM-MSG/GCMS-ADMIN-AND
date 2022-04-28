@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_nav_graph"
+    app:startDestination="@id/studentShearchFragment">
+    <fragment
+        android:id="@+id/studentShearchFragment"
+        android:name="com.example.presentation.ui.student.StudentShearchFragment"
+        android:label="StudentShearchFragment"
+        tools:layout="@layout/fragment_student_shearch">
+        <action
+            android:id="@+id/action_studentShearchFragment_to_studentModifyFragment2"
+            app:destination="@id/studentModifyFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentModifyFragment2"
+        android:name="com.example.presentation.ui.student.StudentModifyFragment"
+        android:label="StudentModifyFragment"
+        tools:layout="@layout/fragment_student_modify" />
+</navigation>

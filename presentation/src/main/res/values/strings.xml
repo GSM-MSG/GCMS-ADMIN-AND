@@ -7,4 +7,24 @@
     <string name="user_num">학번</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="club">동아리</string>
+    <string name="kick">탈퇴</string>
+    <string name="modify_page">수정 페이지</string>
+    <string name="change_student_to_teacher">선생님으로 변경하기</string>
+    <string name="change_teacher_to_student">학생으로 변경하기</string>
+    <string name="club_teacher">담당선생님 :</string>
+    <string name="teacher">선생님</string>
+    <string name="change">교체하기</string>
+    <string name="club_head">부장 :</string>
+    <string name="club_head_name">부장</string>
+    <string name="pop_club">동아리 폭파</string>
+    <string name="club_deadline">신청 마감하기</string>
+    <string name="finish_modify">수정완료</string>
+    <string name="managing_club_student">부원관리</string>
+    <string name="add_club_student">부원 추가</string>
+    <string name="modify_student_info">학생정보 수정하기</string>
+    <string name="modify_club_info">동아리정보 수정하기</string>
+    <string name="input_search_word">검색어를 입력하세요</string>
+    <string name="go_main">메인으로</string>
+    <string name="find_teacher">선생님 조회하기</string>
 </resources>

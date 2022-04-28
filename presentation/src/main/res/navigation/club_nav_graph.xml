@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/club_nav_graph"
+    app:startDestination="@id/clubSearchFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_club_search"
+        android:id="@+id/clubSearchFragment"
+        android:name="com.example.presentation.ui.club.ClubSearchFragment"
+        android:label="ClubSearchFragment" >
+        <action
+            android:id="@+id/action_clubSearchFragment_to_clubModifyFragment"
+            app:destination="@id/clubModifyFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_club_modify"
+        android:id="@+id/clubModifyFragment"
+        android:name="com.example.presentation.ui.club.ClubModifyFragment"
+        android:label="ClubModifyFragment" >
+        <action
+            android:id="@+id/action_clubModifyFragment_to_clubStudentAddFragment2"
+            app:destination="@id/clubStudentAddFragment2" />
+        <action
+            android:id="@+id/action_clubModifyFragment_to_clubStudentManageFragment"
+            app:destination="@id/clubStudentManageFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_club_student_manage"
+        android:id="@+id/clubStudentManageFragment"
+        android:name="com.example.presentation.ui.club.ClubStudentManageFragment"
+        android:label="ClubStudentManageFragment" />
+    <fragment
+        tools:layout="@layout/fragment_club_student_add"
+        android:id="@+id/clubStudentAddFragment2"
+        android:name="com.example.presentation.ui.club.ClubStudentAddFragment"
+        android:label="ClubStudentAddFragment" />
+</navigation>
