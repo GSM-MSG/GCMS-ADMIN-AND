@@ -6,34 +6,43 @@
     app:startDestination="@id/clubSearchFragment">
 
     <fragment
-        tools:layout="@layout/fragment_club_search"
         android:id="@+id/clubSearchFragment"
         android:name="com.example.presentation.ui.club.ClubSearchFragment"
-        android:label="ClubSearchFragment" >
+        android:label="ClubSearchFragment"
+        tools:layout="@layout/fragment_club_search">
         <action
             android:id="@+id/action_clubSearchFragment_to_clubModifyFragment"
             app:destination="@id/clubModifyFragment" />
     </fragment>
     <fragment
-        tools:layout="@layout/fragment_club_modify"
         android:id="@+id/clubModifyFragment"
         android:name="com.example.presentation.ui.club.ClubModifyFragment"
-        android:label="ClubModifyFragment" >
+        android:label="ClubModifyFragment"
+        tools:layout="@layout/fragment_club_modify">
         <action
-            android:id="@+id/action_clubModifyFragment_to_clubStudentAddFragment2"
-            app:destination="@id/clubStudentAddFragment2" />
+            android:id="@+id/action_clubModifyFragment_to_clubStudentAddFragment"
+            app:destination="@id/clubStudentAddFragment" />
         <action
             android:id="@+id/action_clubModifyFragment_to_clubStudentManageFragment"
             app:destination="@id/clubStudentManageFragment" />
     </fragment>
     <fragment
-        tools:layout="@layout/fragment_club_student_manage"
         android:id="@+id/clubStudentManageFragment"
         android:name="com.example.presentation.ui.club.ClubStudentManageFragment"
-        android:label="ClubStudentManageFragment" />
+        android:label="ClubStudentManageFragment"
+        tools:layout="@layout/fragment_club_student_manage">
+        <action
+            android:id="@+id/action_clubStudentManageFragment_to_clubStudentMoveFragment"
+            app:destination="@id/clubStudentMoveFragment" />
+    </fragment>
     <fragment
-        tools:layout="@layout/fragment_club_student_add"
-        android:id="@+id/clubStudentAddFragment2"
+        android:id="@+id/clubStudentAddFragment"
         android:name="com.example.presentation.ui.club.ClubStudentAddFragment"
-        android:label="ClubStudentAddFragment" />
+        android:label="ClubStudentAddFragment"
+        tools:layout="@layout/fragment_club_student_add" />
+    <fragment
+        android:id="@+id/clubStudentMoveFragment"
+        android:name="com.example.presentation.ui.club.ClubStudentMoveFragment"
+        android:label="ClubStudentMoveFragment"
+        tools:layout="@layout/fragment_club_student_move" />
 </navigation>

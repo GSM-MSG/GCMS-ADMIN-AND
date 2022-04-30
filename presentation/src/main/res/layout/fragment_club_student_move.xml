@@ -7,16 +7,16 @@
 
         <variable
             name="fragment"
-            type="com.example.presentation.ui.student.StudentShearchFragment" />
+            type="com.example.presentation.ui.club.ClubStudentMoveFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.student.StudentShearchFragment">
+        tools:context=".ui.club.ClubStudentMoveFragment">
 
         <EditText
-            android:id="@+id/student_srch_edittext"
+            android:id="@+id/move_club_srch_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/input_search_word"
@@ -36,11 +36,10 @@
             app:layout_constraintBottom_toTopOf="@id/go_back"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/student_srch_edittext"
-            tools:listitem="@layout/student_item_layout" />
+            app:layout_constraintTop_toBottomOf="@id/move_club_srch_edittext"
+            tools:listitem="@layout/student_move_item_layout" />
 
         <Button
-            android:onClick="@{fragment::goMain}"
             android:id="@+id/go_back"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,7 +49,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
