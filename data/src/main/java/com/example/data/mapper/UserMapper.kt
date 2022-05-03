@@ -1,18 +1,18 @@
 package com.example.data.mapper
 
 import com.example.data.remote.dto.datasource.user.response.DataGetAllUsersResponse
+import com.example.data.remote.dto.datasource.user.response.DataUserInfo
 import com.example.domain.dto.datasource.user.response.DomainGetAllUsersResponse
+import com.example.domain.dto.datasource.user.response.DomainUserInfo
 
 object UserMapper {
 
     fun getAllUsersMapper(
-        dataResponse: DataGetAllUsersResponse?
-    ): DomainGetAllUsersResponse? {
+        dataResponse: List<DataUserInfo>?
+    ): List<DomainUserInfo>? {
         return if (dataResponse != null) {
-            DomainGetAllUsersResponse(
-                email = dataResponse.email,
-                name = dataResponse.name,
-                grade = dataResponse.grade,
+            List<DomainUserInfo>(
+
             )
         } else dataResponse
     }

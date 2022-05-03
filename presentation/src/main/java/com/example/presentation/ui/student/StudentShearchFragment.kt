@@ -1,6 +1,7 @@
 package com.example.presentation.ui.student
 
 import android.content.Intent
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.activityViewModels
 import com.example.presentation.R
@@ -16,7 +17,7 @@ class StudentShearchFragment :
 
     override fun init() {
         binding.fragment = this
-
+        initResult()
     }
 
     fun goMain(view: View) {
@@ -24,6 +25,10 @@ class StudentShearchFragment :
     }
 
     private fun initResult() {
+        val email = mainViewModel.getAllUsers.email
+        val name = mainViewModel.getAllUsers.name
+        val grade = mainViewModel.getAllUsers.grade
 
+        Log.d("Result","email: $email , name: $name, grade: $grade")
     }
 }
