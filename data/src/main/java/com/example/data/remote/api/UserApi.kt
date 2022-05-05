@@ -1,10 +1,9 @@
 package com.example.data.remote.api
 
-import com.example.data.remote.dto.datasource.user.response.DataGetAllUsersResponse
-import retrofit2.Response
+import com.example.data.remote.dto.datasource.user.response.DataUserInfo
 import retrofit2.http.GET
 
 interface UserApi {
     @GET("user/users")
-    suspend fun getAllUsers(): Response<DataGetAllUsersResponse>
+    suspend fun getAllUsers(): List<DataUserInfo>
 }

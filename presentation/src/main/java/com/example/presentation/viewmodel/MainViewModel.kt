@@ -1,9 +1,10 @@
 package com.example.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.domain.dto.datasource.user.response.DomainGetAllUsersResponse
+import com.example.domain.dto.datasource.user.response.DomainUserInfo
 import com.example.domain.usecase.GetAllUsersUseCase
 import com.example.domain.utils.ErrorType
 import com.example.domain.utils.RemoteErrorEmitter
@@ -18,23 +19,15 @@ class MainViewModel @Inject constructor(
     private val getAllUsersUseCase: GetAllUsersUseCase,
 ) : ViewModel(), RemoteErrorEmitter {
 
-    val apiCallEvent: LiveData<ScreenState> get() = _apiCallEvent
-    private var _apiCallEvent = SingleLiveEvent<ScreenState>()
+    private val _getAllUsers: MutableLiveData<List<DomainUserInfo>> = MutableLiveData()
+    val getAllUsers: LiveData<List<DomainUserInfo>> = _getAllUsers
 
-    var getAllUsers = DomainGetAllUsersResponse("", "", "")
     var apiErrorType = ErrorType.UNKNOWN
     var errorMessage = "none"
 
     fun getAllUsers() {
         viewModelScope.launch {
-            getAllUsersUseCase.getAllUsers(this@MainViewModel)
-                .let { response ->
-                    if (response != null) {
-                        getAllUsers = response
-                        _apiCallEvent.postValue(ScreenState.LOADING)
-                    } else _apiCallEvent.postValue(ScreenState.ERROR)
-
-                }
+            _getAllUsers.value = getAllUsersUseCase.getAllUsers(this@MainViewModel)
         }
     }
 
