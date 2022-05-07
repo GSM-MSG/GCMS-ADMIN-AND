@@ -25,6 +25,12 @@ class StudentShearchFragment :
     }
 
     private fun initResult() {
+        mainViewModel.getAllUsers()
 
+        val email = mainViewModel.getAllUsers.value?.get(0)
+        val name = mainViewModel.getAllUsers.value?.get(1)
+        val grade = mainViewModel.getAllUsers.value?.get(2)
+
+        Log.d("TAG", "email: $email, name: $name, grade: $grade")
     }
 }
