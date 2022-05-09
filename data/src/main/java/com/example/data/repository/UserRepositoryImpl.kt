@@ -1,6 +1,6 @@
 package com.example.data.repository
 
-import com.example.data.mapper.UserMapper
+import com.example.data.mapper.GetAllUsersMapper
 import com.example.data.repository.remote.datasource.UserDataSource
 import com.example.domain.dto.datasource.user.response.DomainUserInfo
 import com.example.domain.repository.UserRepository
@@ -12,7 +12,7 @@ class UserRepositoryImpl @Inject constructor(
 ) : UserRepository {
     override suspend fun getAllUsers(remoteErrorEmitter: RemoteErrorEmitter): List<DomainUserInfo> {
         return userDataSource.getAllUsers(remoteErrorEmitter)!!.map {
-            UserMapper.getAllUsersMapper(it)
+            GetAllUsersMapper.getAllUsersMapper(it)
         }
     }
 }
